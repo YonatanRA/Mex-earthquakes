@@ -49,7 +49,7 @@ def earth():
 		data={'Fecha':fecha, 'Hora':hora,
 			  'Latitud':float(lat), 'Longitud':float(lon),
 			  'Profundidad':prof, 'Intensidad':inten}
-		
+		print (data)
 		db.ssnUnam.update(data, data, upsert=True)
 
 
