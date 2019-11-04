@@ -10,6 +10,9 @@ import time
 
 
     
+client=pymongo.MongoClient()
+db=client.earthquake
+
 
 
 
@@ -19,10 +22,6 @@ def getxml():
 	return xmltodict.parse(data)
 
 
-
-
-client=pymongo.MongoClient()
-db=client.earthquake
 
     
     
