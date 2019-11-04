@@ -1,31 +1,29 @@
-
-import urllib3
+import requests as req
 import xmltodict
 import re
+import folium
+from folium import plugins
+import pandas as pd
 import pymongo 
 import time
+
+
+
+    
+
+
+
+def getxml():
+	url = 'http://www.ssn.unam.mx/rss/ultimos-sismos.xml'
+	data=req.get(url).content
+	return xmltodict.parse(data)
+
 
 
 
 client=pymongo.MongoClient()
 db=client.earthquake
 
-
-
-def getxml():
-    url = 'http://www.ssn.unam.mx/rss/ultimos-sismos.xml'
-
-    http = urllib3.PoolManager()
-
-    response = http.request('GET', url)
-    
-    try:
-        data = xmltodict.parse(response.data)
-    except:
-        print('Failed to parse xml from response {}'.format(traceback.format_exc()))
-    
-    return data
-    
     
     
     
