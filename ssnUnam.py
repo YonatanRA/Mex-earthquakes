@@ -1,4 +1,4 @@
-import traceback
+
 import urllib3
 import xmltodict
 import re
