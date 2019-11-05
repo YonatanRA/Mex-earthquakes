@@ -10,6 +10,7 @@ import time
 
 
     
+    
 client=pymongo.MongoClient()
 db=client.earthquake
 
