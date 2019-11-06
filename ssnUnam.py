@@ -18,6 +18,7 @@ db=client.earthquake
 
 
 
+
 def getxml():
 	url = 'http://www.ssn.unam.mx/rss/ultimos-sismos.xml'
 	data=req.get(url).content
