@@ -24,8 +24,6 @@ def getxml():
 	return xmltodict.parse(data)
 
 
-
-
     
 def earth():
 	
