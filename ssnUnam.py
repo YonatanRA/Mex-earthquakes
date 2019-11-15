@@ -25,8 +25,6 @@ def getxml():
 
 
 
-
-
     
 def earth():
 	
