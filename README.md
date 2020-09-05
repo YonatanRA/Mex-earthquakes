@@ -1,6 +1,6 @@
 ### ETL + Folium
 
-Gracias al RSS de la UNAM http://www.ssn.unam.mx/.
+Gracias al RSS del Servicio Sismologico de la UNAM http://www.ssn.unam.mx/.
 
 Pequeño proceso ETL de datos de terremotos y visualizacion de datos en mapas con folium.
 
