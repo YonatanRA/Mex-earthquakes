@@ -1,9 +1,6 @@
 import requests as req
 import xmltodict
 import re
-import folium
-from folium import plugins
-import pandas as pd
 import pymongo 
 import time
 
